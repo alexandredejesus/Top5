@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão de Obras - TOP 5</title>
+    <link rel="stylesheet" href="style.css"> <!-- Importe o arquivo CSS com os estilos aqui -->
+</head>
+<body>
+    <h1>Sugira uma obra para o TOP 5</h1>
+        <form id="sugestaoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo" name="tipo" required>
+                <option value="">Selecione...</option>
+                <option value="filme">Filme</option>
+                <option value="serie">Série</option>
+            </select>
+            <label for="obra">Nome do Filme/Série:</label>
+            <input type="text" id="obra" name="obra" required>
+            <label for="trailer">Link do Trailer:</label>
+            <input type="url" id="trailer" name="trailer">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="msgContainer"></div> <!-- Container para exibir mensagens de sucesso ou erro -->
+        <script src="scripts.js"></script> <!-- Importe o arquivo JavaScript com as funções de manipulação do formulário aqui -->
+    
+    
+
+</body>
+</html>
